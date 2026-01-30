@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit a Tip | Banks Post</title>
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Submit a Tip to Banks Post">
+    <meta property="og:description" content="Have a story tip, press release, or photo to share? Let us know!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tips.bankspost.com">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Submit a Tip to Banks Post">
+    <meta name="twitter:description" content="Have a story tip, press release, or photo to share? Let us know!">
+
+    <link rel="icon" type="image/png" href="https://bankspost.com/favicon.png">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background-color: #fdf6e3;
+            color: #0d0d0d;
+            line-height: 1.6;
+        }
+
+        .header {
+            background-color: #268bd2;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .header img {
+            max-height: 50px;
+            width: auto;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        h1 {
+            color: #268bd2;
+            margin-bottom: 1rem;
+            font-size: 1.75rem;
+        }
+
+        .explainer {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .explainer p {
+            margin-bottom: 1rem;
+        }
+
+        .explainer p:last-child {
+            margin-bottom: 0;
+        }
+
+        .explainer strong {
+            color: #268bd2;
+        }
+
+        .explainer ul {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+        }
+
+        .explainer li {
+            margin-bottom: 0.5rem;
+        }
+
+        .event-redirect {
+            background: #e8f4fc;
+            border-left: 4px solid #268bd2;
+            padding: 1rem 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .event-redirect a {
+            color: #268bd2;
+            font-weight: 600;
+        }
+
+        .privacy-note {
+            background: #f0f0f0;
+            padding: 1rem 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .form-note {
+            text-align: center;
+            color: #666;
+            font-size: 0.875rem;
+            margin-bottom: 0.5rem;
+            font-style: italic;
+        }
+
+        .form-container {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .airtable-embed {
+            display: block;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            color: #666;
+            font-size: 0.875rem;
+        }
+
+        .footer a {
+            color: #268bd2;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+
+            .explainer {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="https://bankspost.com">
+            <img src="logo.png" alt="Banks Post">
+        </a>
+    </header>
+
+    <main class="container">
+        <h1>Submit a Tip</h1>
+
+        <div class="explainer">
+            <p><strong>Got news?</strong> We want to hear from you! Banks Post covers local news, community events, and stories that matter to Banks and the surrounding area.</p>
+            <p>We're looking for:</p>
+            <ul>
+                <li><strong>Story tips</strong> — Something happening in the community we should know about</li>
+                <li><strong>Press releases</strong> — Official announcements from organizations</li>
+                <li><strong>Photos</strong> — Images of local events, weather, wildlife, or newsworthy moments</li>
+                <li><strong>Other</strong> — Anything else you think we'd be interested in</li>
+            </ul>
+        </div>
+
+        <div class="event-redirect">
+            <strong>Submitting an event?</strong> Use our <a href="https://hub.cityspark.com/event/submission/BanksPost">Community Calendar form</a> instead. Events submitted there will appear on our calendar and may be included in our newsletter.
+        </div>
+
+        <div class="privacy-note">
+            <strong>Privacy:</strong> Your contact information is used only for follow-up questions and will not be shared or published. We may reach out to verify information or ask for additional details.
+        </div>
+
+        <p class="form-note">Scroll down and wait a moment for the form to load.</p>
+
+        <div class="form-container">
+            <!-- Replace FORM_ID with actual Airtable form embed URL after creating form -->
+            <iframe class="airtable-embed" src="https://airtable.com/embed/appCeRo96G0vKIrxA/FORM_ID/form" frameborder="0" onmousewheel="" width="100%" height="1100" style="background: transparent;"></iframe>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>A project of <a href="https://bankspost.com">Banks Post</a></p>
+        <p>Questions? Contact <a href="mailto:chas@bankspost.com">chas@bankspost.com</a></p>
+    </footer>
+</body>
+</html>
